@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>4gms</title>
+<style>
+/* Fond et texte */
+body {
+  margin: 0;
+  background: linear-gradient(135deg, #0f0f0f, #1a1a1a);
+  color: white;
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+  padding: 50px 20px;
+  overflow-x: hidden;
+}
+
+/* Photo de profil */
+img {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  border: 3px solid #00ffff;
+  margin-bottom: 25px;
+  transition: transform 0.5s;
+}
+img:hover {
+  transform: rotate(10deg) scale(1.1);
+}
+
+/* Titre glitch */
+h1 {
+  font-size: 40px;
+  color: #00ffff;
+  position: relative;
+  display: inline-block;
+  margin-bottom: 30px;
+}
+h1::before, h1::after {
+  content: "4gms";
+  position: absolute;
+  left: 0;
+}
+h1::before {
+  animation: glitch1 2s infinite;
+  color: #ff00ff;
+  top: -2px;
+}
+h1::after {
+  animation: glitch2 3s infinite;
+  color: #00ff00;
+  top: 2px;
+}
+@keyframes glitch1 {
+  0% { clip: rect(0, 9999px, 0, 0); }
+  10% { clip: rect(5px, 9999px, 15px, 0); }
+  20% { clip: rect(0, 9999px, 25px, 0); }
+  30% { clip: rect(10px, 9999px, 35px, 0); }
+  40% { clip: rect(0, 9999px, 30px, 0); }
+  50% { clip: rect(5px, 9999px, 25px, 0); }
+  60% { clip: rect(0, 9999px, 20px, 0); }
+  70% { clip: rect(5px, 9999px, 15px, 0); }
+  80% { clip: rect(0, 9999px, 10px, 0); }
+  90% { clip: rect(5px, 9999px, 20px, 0); }
+  100% { clip: rect(0, 9999px, 0, 0); }
+}
+@keyframes glitch2 {
+  0% { clip: rect(0, 9999px, 0, 0); }
+  10% { clip: rect(2px, 9999px, 12px, 0); }
+  20% { clip: rect(0, 9999px, 20px, 0); }
+  30% { clip: rect(5px, 9999px, 25px, 0); }
+  40% { clip: rect(0, 9999px, 18px, 0); }
+  50% { clip: rect(2px, 9999px, 15px, 0); }
+  60% { clip: rect(0, 9999px, 12px, 0); }
+  70% { clip: rect(3px, 9999px, 18px, 0); }
+  80% { clip: rect(0, 9999px, 8px, 0); }
+  90% { clip: rect(2px, 9999px, 15px, 0); }
+  100% { clip: rect(0, 9999px, 0, 0); }
+}
+
+/* Boutons néon animés */
+a {
+  display: block;
+  margin: 15px auto;
+  padding: 16px 0;
+  width: 280px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 18px;
+  text-decoration: none;
+  border-radius: 12px;
+  box-shadow: 0 0 15px #00ffff, 0 0 30px #ff00ff, 0 0 45px #00ffff;
+  background: linear-gradient(90deg, #00ffff, #ff00ff);
+  transition: all 0.3s ease;
+}
+a:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #ff00ff, 0 0 40px #00ffff, 0 0 60px #ff00ff;
+}
+
+/* Embed SoundCloud responsive et stylé */
+.soundcloud-wrapper {
+  margin-top: 30px;
+  display: block;
+  width: 100%;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5px;
+  border-radius: 15px;
+  background: linear-gradient(45deg, #00ffff, #ff00ff);
+  box-shadow: 0 0 20px #00ffff, 0 0 40px #ff00ff;
+  transition: 0.3s;
+}
+.soundcloud-wrapper:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 30px #ff00ff, 0 0 50px #00ffff;
+}
+.soundcloud-embed {
+  width: 100%;
+  height: 166px;
+  border-radius: 10px;
+  border: none;
+}
+</style>
+</head>
+<body>
+
+<!-- Photo de profil -->
+<img src="https://pin.it/3A3F8o5oh" alt="Photo de 4gms">
+
+<!-- Titre -->
+<h1>4gms</h1>
+
+<!-- Boutons liens -->
+<a href="https://instagram.com/ga_etan12" target="_blank">Instagram</a>
+<a href="https://guns.lol/upv9" target="_blank">Guns.lol</a>
+<a href="https://paypal.me/agrumes12" target="_blank">Paypal</a>
+<a href="https://discord.gg/zyBmkPyw" target="_blank">Contact</a>
+
+<!-- Lecteur SoundCloud responsive et stylé -->
+<div class="soundcloud-wrapper">
+  <iframe class="soundcloud-embed" 
+  src="https://w.soundcloud.com/player/?url=https://soundcloud.com/lilpeep/nuts&color=%2300ffff&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true" 
+  allow="autoplay"></iframe>
+</div>
+
+</body>
+</html>
